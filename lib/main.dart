@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
           backgroundColor: Colors.deepPurple[200],
           appBar: AppBar(
             backgroundColor: Colors.deepPurpleAccent[100],
             title: const Center(
-              child: Text('Eu sou programador'),
+              child: Text(
+                'Eu Sou Programador',
+                style: TextStyle(fontSize: 32),
+              ),
             ),
           ),
           body: Center(
